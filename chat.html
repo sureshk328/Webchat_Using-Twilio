@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Twilio Chat Quickstart</title>
+    <link rel="shortcut icon" href="//www.twilio.com/marketing/bundles/marketing/img/favicons/favicon.ico">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body onload="startClockCounter();">
+  <div class="outer-container">
+    <div class="company">
+      <div class="company-logo">
+        <img src="logo.png" alt="Suresh" style="height: 60px; width: 150px;">
+      </div>
+      <div class="company-name">
+        <label id="companyName">Suresh iDeas Chat Service</label><br>
+        <label id="channelName" style="font-size: 15px;">A one stop solution for all your queries</label>
+        <div class="time" id='divTymCounter'>
+          Session Time(<label  id="minutes">00</label> Min <label  id="seconds">00</label> Sec)
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="support-company-name">
+      <label id="supportCompanyName">Powered by </label><img src="twilio-2.svg" alt="Twilio" style="height: 25px; width: 80px; padding-top: 3px;">
+    </div>
+
+    <div class="section">
+      <div id="messages"></div>
+      <input id="chat-input" type="text" placeholder="Type a message" autofocus/>
+      <button id="close-button" class="close-button">End Chat</button>
+    </div>
+
+    <script src="https://media.twiliocdn.com/sdk/js/chat/releases/4.0.0/twilio-chat.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </div>
+</body>
+</html>

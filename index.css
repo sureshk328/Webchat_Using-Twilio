@@ -1,0 +1,184 @@
+* {
+  box-sizing:border-box;
+}
+
+html, body {
+  padding:0;
+  margin:0;
+  height:100%;
+  color:#dedede;
+  background-color: lightyellow;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.outer-container {
+  display: block;
+  margin: auto;
+  background-color: whitesmoke;
+  font-family: Raleway;
+  width: 70%;
+  height: 100%;
+  text-align: left;
+  overflow: auto;
+}
+
+.company {
+  background-color: white; 
+  width: 100%;
+}
+
+.company-logo {
+  width: 160px;
+  height: 80px;
+  float: left;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.company-name{
+  font-size: 30px;
+  width: 100%;
+  height: 80px;
+  padding: 0 0;
+  background-size: 100%; 
+  color: rgb(2, 2, 100);
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.time{
+  font-size: 15px;
+  float: right;
+  padding-top: 10px;
+  padding-right: 15px;
+  color: black;
+}
+
+.support-company-name {
+  background-color: rgb(231, 231, 231);
+  width: 100%;
+  height: 40px;
+  padding: 0 0;
+  background-size: 100%;
+  font-size: 20px;
+  color: rgb(112, 112, 112);
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: right;
+}
+
+.section {
+  height:70%;
+}
+
+.section input {
+  display:block;
+  height:52px;
+  width: 70%;
+  margin: auto;
+  outline:none;
+  background-color:transparent;
+  border:none;
+  border-top: 1px solid #2B2B2A;
+  padding-left: 10px;
+  font-size:22px;
+  color: black;
+  position: absolute;
+  bottom: 30px;
+}
+
+.close-button {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgb(253, 25, 25);
+  display: block;
+  height: 50px;
+  width: 100px;
+  position: absolute;
+  right: 17%;
+  bottom: 25px;
+}
+
+#messages {
+  background-color: whitesmoke;
+  height:100%;
+  width: 100%;
+  margin:0 auto;
+  overflow-y:auto;
+}
+
+#messages p {
+  margin:5px 0;
+  padding:0;
+}
+
+.info {
+  margin:5px 0;
+  font-style:italic;
+  color: black;
+  padding-left: 10px;
+}
+
+.message-container {
+  margin:5px 0;
+  color:black;
+  background-color: lightblue;
+  min-width: 52%;
+  float: left;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px 30px 30px 5px;
+}
+
+.message-container-user {
+  margin:5px 0;
+  color: black;
+  background-color: rgb(255, 197, 91);
+  min-width: 52%;
+  float: right;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 30px 5px 5px 30px;
+}
+
+.message-container .username {
+  display:inline-block;
+  margin-right:5px;
+  font-weight:bold;
+  color: black;
+}
+
+.message-container-user .time-stamp{
+  font-size: 12px;
+  float: right;
+  padding-top: 10px;
+}
+
+.message-container .time-stamp{
+  font-size: 12px;
+  float: right;
+  padding-top: 10px;
+}
+
+.message-container-user .username {
+  display:inline-block;
+  margin-right:5px;
+  font-weight:bold;
+  color: black;
+}
+
+.me, .username.me {
+  font-weight:bold;
+  background-color: rgb(255, 197, 91);
+}
+
+.message-container .username.me {
+  display:inline-block;
+  margin-right:5px;
+}
+
+.message-container-user .username.me {
+  display:inline-block;
+  margin-right:5px;
+}

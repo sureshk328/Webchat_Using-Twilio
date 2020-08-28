@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Twilio Chat Quickstart</title>
+    <link rel="shortcut icon" href="//www.twilio.com/marketing/bundles/marketing/img/favicons/favicon.ico">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<script>
+  function StartChat(){
+    var chatRoom=document.getElementById('channelName').value;
+    var userName=document.getElementById('userName').value;
+
+    console.log("Joining or Creating "+chatRoom);
+    if(!chatRoom=="" && !userName=="" )
+    {
+      var getUrl = window.location;
+      var baseUrl = getUrl .protocol + "//" + getUrl.host + "/"
+      location.href = baseUrl+"chat.html?channelName="+chatRoom+"&identity="+userName;
+    }
+    
+  }
+</script>
+<body>
+  <div id="chatdetails">
+  <label>Provide Channel and UserName</label>
+  <input id="channelName"></input>
+  <input id="userName"></input>
+  <button id="btnStartChat" onclick="StartChat()">Join Chat</button>
+</div>
+
+
+  
+</body>
+</html>
